@@ -4,6 +4,7 @@ export default function AlbumPage() {
   const router = useRouter();
 
   const handleClick = () => {
+     /* make API call example */
     router.push("/");
   }
 
