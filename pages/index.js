@@ -1,13 +1,19 @@
-import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function HomePage() {
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push("/albums");
+  }
+
   return (
     <div className="w-full py-10 bg-red-100">Home
-      <div>
-        <Link href="/albums">
-            Album Poll
-        </Link>
-      </div>
+
+      <button className="bg-blue-500 px-2 py-1 rounded"
+      onClick={handleClick}>
+        Albums Poll
+      </button>
     </div>
   )
 }
