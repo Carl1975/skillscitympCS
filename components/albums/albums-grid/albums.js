@@ -1,4 +1,7 @@
-export default [
+/* Hard coded removed API request used */
+/* file no longer required */
+
+/* export default [
     {
         title: "Hunky Dory",
         artist: "David Bowie"
@@ -19,7 +22,7 @@ export default [
         title: "Abbey Road",
         artist: "The Beatles"
     }
-];
+]; */
     
 
 
