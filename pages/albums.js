@@ -1,26 +1,17 @@
+/* import AlbumsGrid from "@/components/albums/albums-grid/album-item"; */
+import AlbumsGrid from "@/components/albums/albums-grid";
 import Link from "next/link";
-/* import { useRouter } from "next/router"; */
 
-export default function HomePage() {
-/*     const router = useRouter(); */
-  
-    /* const handleClick = () => {
-       /* make API call example */
-     /*  router.push("/albums"); */
-   /*  }  */
-
+export default function AlbumPollPage() {
   return (
-    <div className="w-full py-10 bg-green-100">Albums Poll
+    <div className="w-full py-10 bg-red-100">
+      Album Poll
 
-      {/* <button className="bg-blue-500 px-2 py-1 rounded"
-      onClick={handleClick}>
-        Albums Poll
-      </button> */} 
+      <AlbumsGrid />
 
       <Link href="/">
         Home
       </Link>
-
     </div>
   )
 }
