@@ -1,17 +1,21 @@
 /* import AlbumsGrid from "@/components/albums/albums-grid/album-item"; */
-import AlbumsGrid from "@/components/albums/albums-grid";
-import Link from "next/link";
+/* import AlbumsGrid from "@/components/albums/albums-grid"; */
+import Content from "@/components/shared/content";
+import Footer from "@/components/shared/footer";
+import Header from "@/components/shared/header";
 
-export default function AlbumPollPage() {
+export default function AlbumPage() {
   return (
-    <div className="w-full py-10 bg-red-100">
-      Album Poll
+      <div className="w-full bg-red-100 max-w-6xl mx-auto mt-8">
+        <Header name="Album" />
+  
+     <Content></Content>
 
-      <AlbumsGrid />
-
-      <Link href="/">
-        Home
-      </Link>
+      <div className="w-full max-w-6xl mx-auto mt-8">
+      <Footer href="/" title="Home"/>
+      </div>
     </div>
   )
-}
+  }
+
+      
