@@ -4,9 +4,10 @@ import Content from "@/components/shared/content";
 import Footer from "@/components/shared/footer";
 import Header from "@/components/shared/header";
 
+
 export default function AlbumPage() {
   return (
-    <div className="w-full bg-red-100 max-w-6xl mx-auto mt-8">
+    <div className="w-full max-w-6xl mx-auto mt-8">
       <Header name="Albums" />
 
       <Content>
