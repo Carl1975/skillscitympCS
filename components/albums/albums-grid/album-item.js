@@ -1,9 +1,23 @@
+import { useState } from "react";
 export default function AlbumItem({ album }) {
+  const [likes, setLikes] = useState(0);
+
+  const handleLike = () => {
+    let newLikes = likes + 1;
+    setLikes(newLikes);
+  }
+
   return (
-    <div className="bg-green-100">
-      <img src={album.imgUrl} />
-      <p>{album.title}</p>
-      <p>{album.artist}</p>
+    <div className="border rounded-lg p-4">
+      <img src={album.imgUrl} className="rounded-lg"/>
+      <p className="text-xl medium-font">{album.title}</p>
+      <p className="text-gray-700">{album.artist}</p>
+      <button
+            onClick={handleLike}
+            type="button"
+            className="bg-blue-500 px-2 py-1 rounded text-white">
+              Like ({likes} likes)
+      </button>
     </div>
   )
 }
