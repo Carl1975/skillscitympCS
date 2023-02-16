@@ -9,7 +9,7 @@ export default function AlbumItem({ album }) {
 
   return (
     <div className="border rounded-lg p-4">
-      <img src={album.imgUrl} className="rounded-lg"/>
+      <img src={album.img_url} className="rounded-lg"/>
       <p className="text-xl medium-font">{album.title}</p>
       <p className="text-gray-700">{album.artist}</p>
       <button
