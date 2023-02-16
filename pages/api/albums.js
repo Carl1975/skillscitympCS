@@ -1,4 +1,8 @@
+import sql from "@/utils/postgres";
+
 export default function handler(req, res) {
+    
+
     const albums = [
         {
             id: "1",
