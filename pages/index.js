@@ -7,7 +7,7 @@ import Header from "@/components/shared/header";
 export default function HomePage() {
   return (
     <div className="w-full">
-      <Header name="Home" />
+      <Header name="Home Page" />
 
       <Hero imgUrl="/assets/profilepicrev1.jpg"
         title="Carl Snaylam"
@@ -21,7 +21,7 @@ export default function HomePage() {
         </div>
 
       </Content>
-      <Footer href="/albums" title="Albums" />
+      <Footer href="/albums" title="Album" />
     </div>
   )
 }
