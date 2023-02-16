@@ -1,9 +1,17 @@
 import sql from "@/utils/postgres";
 
-export default function handler(req, res) {
-    
+export default async function handler(req, res) {
 
-    const albums = [
+    const albums = await sql `
+    select * from albums
+    `;
+    res.json(albums);
+}
+
+
+
+
+  /*   const albums = [
         {
             id: "1",
             title: "Hunky Dory",
@@ -37,4 +45,4 @@ export default function handler(req, res) {
     ];
     res.json(albums);
 
-}
+} */
