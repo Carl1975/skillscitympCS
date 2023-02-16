@@ -8,7 +8,7 @@ import Header from "@/components/shared/header";
 export default function AlbumPage() {
   return (
     <div className="w-full max-w-6xl mx-auto mt-8">
-      <Header name="Albums" />
+      <Header name="Album Page" />
 
       <Content>
         <div className="w-full max-w-6xl mx-auto mt-8">
