@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 export default function AlbumItem({ album }) {
   const [likes, setLikes] = useState(0);
@@ -10,7 +11,9 @@ export default function AlbumItem({ album }) {
   return (
     <div className="border rounded-lg p-4">
       <img src={album.img_url} className="rounded-lg"/>
-      <p className="text-xl medium-font">{album.title}</p>
+      <Link href={`/single-album/${album.id}`} className="text-xl medium-font">
+      {album.title}
+      </Link>
       <p className="text-gray-700">{album.artist}</p>
       <button
             onClick={handleLike}
