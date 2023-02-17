@@ -36,7 +36,7 @@ export default function SingleAlbum() {
             <Header name={album.title} />
 
             <Hero
-                imgUrl={album.imgUrl}
+                imgUrl={album.img_url}
                 title={album.title}
                 subtitle={album.artist}
 
