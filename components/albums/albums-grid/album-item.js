@@ -1,11 +1,16 @@
 import Link from "next/link";
 import { useState } from "react";
 export default function AlbumItem({ album }) {
-  const [likes, setLikes] = useState(0);
+  const [likes, setLikes] = useState(+album.likes);
 
-  const handleLike = () => {
+  const handleLike = async () => {
     let newLikes = likes + 1;
     setLikes(newLikes);
+
+    const id = +album.id;
+    const response = await fetch(`/api/increment-likes?id=${id}&likes=${newLikes}`);
+    const data = await response.json;
+    
   }
 
   return (
