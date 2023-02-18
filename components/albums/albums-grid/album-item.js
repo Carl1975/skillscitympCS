@@ -15,10 +15,10 @@ export default function AlbumItem({ album }) {
 
   return (
     <div className="border rounded-lg p-4">
-      <Link href={`/single-album/${album.id}`} className="rounded-lg">
-        <img src={album.img_url} />
+      <img src={album.img_url} classNam="rounded-lg" />
+      <Link href={`/single-album/${album.id}`} className="text-xl medium-font">
+        {album.title}
       </Link>
-      <p className="text-xl medium-font">{album.title}</p>
       <p className="text-gray-700">{album.artist}</p>
       <button
             onClick={handleLike}
